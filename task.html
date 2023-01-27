@@ -25,6 +25,40 @@
     ></script>
   </head>
   <style>
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 50%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgb(0, 0, 0);
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .modal-content {
+      background-color: #fefefe;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+    }
+
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
     /* .body {
       min-height: 400px;
       min-width: 300px;
@@ -96,8 +130,7 @@
             <!-- attachment -->
             <div class="d-flex">
               <h6>25</h6>
-
-              <button class="border none">
+              <button id="myBtn" class="border none">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -136,7 +169,6 @@
         </div>
 
         <!-- Modal testing -->
-        <button id="myBtn">Modal</button>
 
         <!-- The Modal -->
         <div id="myModal" class="modal">
