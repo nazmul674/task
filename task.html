@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Task</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <style>
+    /* .body {
+      min-height: 400px;
+      min-width: 300px;
+      margin-right: 5px;
+    } */
+    .w-25 {
+      width: 10% !important;
+    }
+  </style>
+  <body>
+    <div
+      class="d-flex flex-row flex-nowrap overflow-x-auto border"
+      style="height: 300px; width: 1400px"
+    >
+      <div
+        class="p-3 bg-light overflow-y-auto"
+        style="width: 860px; height: 100%"
+      >
+        <div class="div"><h5>Incomplete</h5></div>
+        <div class="div">
+          <div class="d-flex justify-content-between">
+            <h6>Client Name</h6>
+            <h6>Sadik</h6>
+          </div>
+          <div class="d-flex justify-content-between">
+            <div><p>This is the mention date</p></div>
+
+            <div class="d-flex justify-content-end">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-25 h-25"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 15.75V18m-7.5-6.75h.008v.008H8.25v-.008zm0 2.25h.008v.008H8.25V13.5zm0 2.25h.008v.008H8.25v-.008zm0 2.25h.008v.008H8.25V18zm2.498-6.75h.007v.008h-.007v-.008zm0 2.25h.007v.008h-.007V13.5zm0 2.25h.007v.008h-.007v-.008zm0 2.25h.007v.008h-.007V18zm2.504-6.75h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V13.5zm0 2.25h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V18zm2.498-6.75h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V13.5zM8.25 6h7.5v2.25h-7.5V6zM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.65 4.5 4.757V19.5a2.25 2.25 0 002.25 2.25h10.5a2.25 2.25 0 002.25-2.25V4.757c0-1.108-.806-2.057-1.907-2.185A48.507 48.507 0 0012 2.25z"
+                />
+              </svg>
+              <h6>1/2</h6>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <img src="./images/d1.jpg" class="w-25" />
+            <img src="./images/d1.jpg" class="w-25" />
+            <h6>12+</h6>
+            <div class="d-flex">
+              <h6>15</h6>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-wechat"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.176 14.429c-2.665 0-4.826-1.8-4.826-4.018 0-2.22 2.159-4.02 4.824-4.02S16 8.191 16 10.411c0 1.21-.65 2.301-1.666 3.036a.324.324 0 0 0-.12.366l.218.81a.616.616 0 0 1 .029.117.166.166 0 0 1-.162.162.177.177 0 0 1-.092-.03l-1.057-.61a.519.519 0 0 0-.256-.074.509.509 0 0 0-.142.021 5.668 5.668 0 0 1-1.576.22ZM9.064 9.542a.647.647 0 1 0 .557-1 .645.645 0 0 0-.646.647.615.615 0 0 0 .09.353Zm3.232.001a.646.646 0 1 0 .546-1 .645.645 0 0 0-.644.644.627.627 0 0 0 .098.356Z"
+                />
+                <path
+                  d="M0 6.826c0 1.455.781 2.765 2.001 3.656a.385.385 0 0 1 .143.439l-.161.6-.1.373a.499.499 0 0 0-.032.14.192.192 0 0 0 .193.193c.039 0 .077-.01.111-.029l1.268-.733a.622.622 0 0 1 .308-.088c.058 0 .116.009.171.025a6.83 6.83 0 0 0 1.625.26 4.45 4.45 0 0 1-.177-1.251c0-2.936 2.785-5.02 5.824-5.02.05 0 .1 0 .15.002C10.587 3.429 8.392 2 5.796 2 2.596 2 0 4.16 0 6.826Zm4.632-1.555a.77.77 0 1 1-1.54 0 .77.77 0 0 1 1.54 0Zm3.875 0a.77.77 0 1 1-1.54 0 .77.77 0 0 1 1.54 0Z"
+                />
+              </svg>
+            </div>
+
+            <!-- attachment -->
+            <div class="d-flex">
+              <h6>25</h6>
+
+              <button class="border none">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-paperclip"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M4.5 3a2.5 2.5 0 0 1 5 0v9a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1 0v7a.5.5 0 0 0 1 0V3a1.5 1.5 0 1 0-3 0v9a2.5 2.5 0 0 0 5 0V5a.5.5 0 0 1 1 0v7a3.5 3.5 0 1 1-7 0V3z"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <!-- calender -->
+            <div class="d-flex justify-content-between">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-calendar3 me-2"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"
+                />
+                <path
+                  d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
+                />
+              </svg>
+              <h6>30/12/2022</h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal testing -->
+        <button id="myBtn">Modal</button>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <input id="fileInput" type="file" />
+          </div>
+        </div>
+
+        <!-- next -->
+        <div class="div"></div>
+        <div class="div"></div>
+        <div class="div"></div>
+        <div class="div"></div>
+        <div class="div"></div>
+      </div>
+      <div
+        class="p-3 bg-light overflow-y-auto"
+        style="width: 360px; height: 100%"
+      >
+        This is an example of overflow-x-scroll
+        <code>.overflow-auto</code>
+        on an element with set width and height dimensions. By design, this
+        content will vertically scroll.
+        <div class="p">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae
+          repellat omnis sequi doloremque, nobis et provident beatae tempore!
+        </div>
+        <div class="p">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae id
+          molestiae cum amet, veritatis omnis dolores, reiciendis porro ipsum
+          libero odio pariatur illum nemo? Ab nihil libero modi suscipit
+          tempore! Sed molestiae aut iste eos officiis. Ut, tempora. Quaerat
+          optio, reiciendis aspernatur nihil praesentium culpa magnam
+          voluptatibus. Sapiente necessitatibus recusandae maxime rem, itaque
+          reprehenderit est provident animi iusto minima quisquam at a saepe
+          magnam quae. Dolores blanditiis a ex quam labore optio hic nisi
+          laboriosam tempore itaque culpa qui reiciendis, nostrum asperiores
+          porro perferendis maxime voluptatibus earum alias ipsum, inventore
+          ducimus molestiae est temporibus. Voluptas molestiae magnam quis modi,
+          cumque velit placeat nostrum iusto ipsa, nobis nemo architecto
+          deleniti beatae repellat reprehenderit neque, nihil dignissimos minus
+          explicabo. Ratione aperiam accusantium nobis at velit ut commodi
+          praesentium est sequi aliquam tenetur, maxime culpa repudiandae nisi
+          nihil officia nam hic, minus consectetur, totam cupiditate ipsum.
+          Fugit quasi molestiae molestias consequatur quos voluptatem
+          praesentium dicta perferendis ipsam nulla minima rerum aspernatur,
+          reprehenderit quis soluta distinctio assumenda voluptates. Hic ut
+          excepturi, similique autem recusandae impedit eligendi natus ratione
+          voluptatem temporibus fugit est ipsa ex sed quas tempore laborum esse
+          laboriosam quasi non at voluptate, officiis sunt. At ab laudantium qui
+          quibusdam accusantium beatae ea maxime delectus totam architecto
+          nesciunt, suscipit quam fuga nisi, minima earum, ipsum soluta? Eveniet
+          cumque qui totam rerum eius vel optio labore in! Aliquid et magni eos
+          obcaecati impedit soluta quae velit sapiente odio expedita nulla unde
+          magnam, voluptatibus numquam tempora sed officiis laudantium sit
+          voluptates tenetur? Excepturi adipisci laboriosam aperiam corporis
+          quidem dolores maxime ad perspiciatis dolorum aut. Enim ad nihil
+          nulla, at officiis tempore deserunt excepturi sit aperiam? Quisquam,
+          obcaecati nesciunt saepe laborum facere aperiam maiores corrupti
+          officia! Iusto perspiciatis culpa iure, numquam soluta magnam ipsum
+          magni repellendus, quae nisi consectetur. Eum, quibusdam accusamus
+          eveniet fugiat magni sed veritatis repellendus dolorem labore incidunt
+          beatae expedita ipsum quasi quidem ad laudantium praesentium earum
+          deleniti placeat voluptas impedit dignissimos quod! Pariatur
+          reprehenderit quis odit molestiae molestias sapiente neque quia culpa
+          aperiam. Magnam consequatur cum nisi officia alias error aspernatur
+          modi, veniam unde molestias? Eaque velit reprehenderit vero
+          consectetur similique asperiores? Corporis ipsum quam fugit nisi minus
+          debitis accusantium, fuga ipsa error, facilis nostrum doloremque
+          quidem? Delectus cupiditate possimus rem quasi doloremque, voluptate
+          dignissimos accusantium, deleniti quam corporis ad tempora vero
+          laboriosam dolores blanditiis numquam voluptatibus ullam officia
+          dolore quidem, id earum beatae veniam. Quam laudantium minus deserunt
+          ullam voluptatem molestiae fugiat iste exercitationem ad magnam, non
+          facilis deleniti! Adipisci mollitia voluptate quia quos ea maiores at
+          officiis nesciunt dolores explicabo blanditiis alias numquam excepturi
+          ipsum esse doloremque qui, nemo velit perspiciatis odio commodi ad nam
+          possimus. At animi dolorem fugiat porro molestias quibusdam error quam
+          aut, minima ex nihil quasi architecto. Id adipisci eligendi debitis
+          molestias minima sint hic repellat iste accusantium? Consectetur
+          voluptatem officia earum nulla! Est assumenda recusandae consectetur
+          dicta facilis temporibus accusamus porro! A error similique placeat
+          perspiciatis. At nisi, corrupti ea, sint magni nobis exercitationem
+          ipsum quos fugiat itaque maxime quisquam soluta eligendi quo, ullam
+          quia.
+        </div>
+      </div>
+
+      <div
+        class="p-3 bg-light overflow-y-auto"
+        style="width: 360px; height: 100%"
+      >
+        This is an example of overflow-x-scroll
+        <code>.overflow-auto</code>
+        on an element with set width and height dimensions. By design, this
+        content will vertically scroll.
+        <div class="p">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae
+          repellat omnis sequi doloremque, nobis et provident beatae tempore!
+        </div>
+        <div class="p">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae id
+          molestiae cum amet, veritatis omnis dolores, reiciendis porro ipsum
+          libero odio pariatur illum nemo? Ab nihil libero modi suscipit
+          tempore! Sed molestiae aut iste eos officiis. Ut, tempora. Quaerat
+          optio, reiciendis aspernatur nihil praesentium culpa magnam
+          voluptatibus. Sapiente necessitatibus recusandae maxime rem, itaque
+          reprehenderit est provident animi iusto minima quisquam at a saepe
+          magnam quae. Dolores blanditiis a ex quam labore optio hic nisi
+          laboriosam tempore itaque culpa qui reiciendis, nostrum asperiores
+          porro perferendis maxime voluptatibus earum alias ipsum, inventore
+          ducimus molestiae est temporibus. Voluptas molestiae magnam quis modi,
+          cumque velit placeat nostrum iusto ipsa, nobis nemo architecto
+          deleniti beatae repellat reprehenderit neque, nihil dignissimos minus
+          explicabo. Ratione aperiam accusantium nobis at velit ut commodi
+          praesentium est sequi aliquam tenetur, maxime culpa repudiandae nisi
+          nihil officia nam hic, minus consectetur, totam cupiditate ipsum.
+          Fugit quasi molestiae molestias consequatur quos voluptatem
+          praesentium dicta perferendis ipsam nulla minima rerum aspernatur,
+          reprehenderit quis soluta distinctio assumenda voluptates. Hic ut
+          excepturi, similique autem recusandae impedit eligendi natus ratione
+          voluptatem temporibus fugit est ipsa ex sed quas tempore laborum esse
+          laboriosam quasi non at voluptate, officiis sunt. At ab laudantium qui
+          quibusdam accusantium beatae ea maxime delectus totam architecto
+          nesciunt, suscipit quam fuga nisi, minima earum, ipsum soluta? Eveniet
+          cumque qui totam rerum eius vel optio labore in! Aliquid et magni eos
+          obcaecati impedit soluta quae velit sapiente odio expedita nulla unde
+          magnam, voluptatibus numquam tempora sed officiis laudantium sit
+          voluptates tenetur? Excepturi adipisci laboriosam aperiam corporis
+          quidem dolores maxime ad perspiciatis dolorum aut. Enim ad nihil
+          nulla, at officiis tempore deserunt excepturi sit aperiam? Quisquam,
+          obcaecati nesciunt saepe laborum facere aperiam maiores corrupti
+          officia! Iusto perspiciatis culpa iure, numquam soluta magnam ipsum
+          magni repellendus, quae nisi consectetur. Eum, quibusdam accusamus
+          eveniet fugiat magni sed veritatis repellendus dolorem labore incidunt
+          beatae expedita ipsum quasi quidem ad laudantium praesentium earum
+          deleniti placeat voluptas impedit dignissimos quod! Pariatur
+          reprehenderit quis odit molestiae molestias sapiente neque quia culpa
+          aperiam. Magnam consequatur cum nisi officia alias error aspernatur
+          modi, veniam unde molestias? Eaque velit reprehenderit vero
+          consectetur similique asperiores? Corporis ipsum quam fugit nisi minus
+          debitis accusantium, fuga ipsa error, facilis nostrum doloremque
+          quidem? Delectus cupiditate possimus rem quasi doloremque, voluptate
+          dignissimos accusantium, deleniti quam corporis ad tempora vero
+          laboriosam dolores blanditiis numquam voluptatibus ullam officia
+          dolore quidem, id earum beatae veniam. Quam laudantium minus deserunt
+          ullam voluptatem molestiae fugiat iste exercitationem ad magnam, non
+          facilis deleniti! Adipisci mollitia voluptate quia quos ea maiores at
+          officiis nesciunt dolores explicabo blanditiis alias numquam excepturi
+          ipsum esse doloremque qui, nemo velit perspiciatis odio commodi ad nam
+          possimus. At animi dolorem fugiat porro molestias quibusdam error quam
+          aut, minima ex nihil quasi architecto. Id adipisci eligendi debitis
+          molestias minima sint hic repellat iste accusantium? Consectetur
+          voluptatem officia earum nulla! Est assumenda recusandae consectetur
+          dicta facilis temporibus accusamus porro! A error similique placeat
+          perspiciatis. At nisi, corrupti ea, sint magni nobis exercitationem
+          ipsum quos fugiat itaque maxime quisquam soluta eligendi quo, ullam
+          quia.
+        </div>
+      </div>
+      <div
+        class="p-3 bg-light overflow-y-auto"
+        style="width: 360px; height: 100%"
+      >
+        This is an example of overflow-x-scroll
+        <code>.overflow-auto</code>
+        on an element with set width and height dimensions. By design, this
+        content will vertically scroll.
+        <div class="p">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae
+          repellat omnis sequi doloremque, nobis et provident beatae tempore!
+        </div>
+        <div class="p">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae id
+          molestiae cum amet, veritatis omnis dolores, reiciendis porro ipsum
+          libero odio pariatur illum nemo? Ab nihil libero modi suscipit
+          tempore! Sed molestiae aut iste eos officiis. Ut, tempora. Quaerat
+          optio, reiciendis aspernatur nihil praesentium culpa magnam
+          voluptatibus. Sapiente necessitatibus recusandae maxime rem, itaque
+          reprehenderit est provident animi iusto minima quisquam at a saepe
+          magnam quae. Dolores blanditiis a ex quam labore optio hic nisi
+          laboriosam tempore itaque culpa qui reiciendis, nostrum asperiores
+          porro perferendis maxime voluptatibus earum alias ipsum, inventore
+          ducimus molestiae est temporibus. Voluptas molestiae magnam quis modi,
+          cumque velit placeat nostrum iusto ipsa, nobis nemo architecto
+          deleniti beatae repellat reprehenderit neque, nihil dignissimos minus
+          explicabo. Ratione aperiam accusantium nobis at velit ut commodi
+          praesentium est sequi aliquam tenetur, maxime culpa repudiandae nisi
+          nihil officia nam hic, minus consectetur, totam cupiditate ipsum.
+          Fugit quasi molestiae molestias consequatur quos voluptatem
+          praesentium dicta perferendis ipsam nulla minima rerum aspernatur,
+          reprehenderit quis soluta distinctio assumenda voluptates. Hic ut
+          excepturi, similique autem recusandae impedit eligendi natus ratione
+          voluptatem temporibus fugit est ipsa ex sed quas tempore laborum esse
+          laboriosam quasi non at voluptate, officiis sunt. At ab laudantium qui
+          quibusdam accusantium beatae ea maxime delectus totam architecto
+          nesciunt, suscipit quam fuga nisi, minima earum, ipsum soluta? Eveniet
+          cumque qui totam rerum eius vel optio labore in! Aliquid et magni eos
+          obcaecati impedit soluta quae velit sapiente odio expedita nulla unde
+          magnam, voluptatibus numquam tempora sed officiis laudantium sit
+          voluptates tenetur? Excepturi adipisci laboriosam aperiam corporis
+          quidem dolores maxime ad perspiciatis dolorum aut. Enim ad nihil
+          nulla, at officiis tempore deserunt excepturi sit aperiam? Quisquam,
+          obcaecati nesciunt saepe laborum facere aperiam maiores corrupti
+          officia! Iusto perspiciatis culpa iure, numquam soluta magnam ipsum
+          magni repellendus, quae nisi consectetur. Eum, quibusdam accusamus
+          eveniet fugiat magni sed veritatis repellendus dolorem labore incidunt
+          beatae expedita ipsum quasi quidem ad laudantium praesentium earum
+          deleniti placeat voluptas impedit dignissimos quod! Pariatur
+          reprehenderit quis odit molestiae molestias sapiente neque quia culpa
+          aperiam. Magnam consequatur cum nisi officia alias error aspernatur
+          modi, veniam unde molestias? Eaque velit reprehenderit vero
+          consectetur similique asperiores? Corporis ipsum quam fugit nisi minus
+          debitis accusantium, fuga ipsa error, facilis nostrum doloremque
+          quidem? Delectus cupiditate possimus rem quasi doloremque, voluptate
+          dignissimos accusantium, deleniti quam corporis ad tempora vero
+          laboriosam dolores blanditiis numquam voluptatibus ullam officia
+          dolore quidem, id earum beatae veniam. Quam laudantium minus deserunt
+          ullam voluptatem molestiae fugiat iste exercitationem ad magnam, non
+          facilis deleniti! Adipisci mollitia voluptate quia quos ea maiores at
+          officiis nesciunt dolores explicabo blanditiis alias numquam excepturi
+          ipsum esse doloremque qui, nemo velit perspiciatis odio commodi ad nam
+          possimus. At animi dolorem fugiat porro molestias quibusdam error quam
+          aut, minima ex nihil quasi architecto. Id adipisci eligendi debitis
+          molestias minima sint hic repellat iste accusantium? Consectetur
+          voluptatem officia earum nulla! Est assumenda recusandae consectetur
+          dicta facilis temporibus accusamus porro! A error similique placeat
+          perspiciatis. At nisi, corrupti ea, sint magni nobis exercitationem
+          ipsum quos fugiat itaque maxime quisquam soluta eligendi quo, ullam
+          quia.
+        </div>
+      </div>
+      <div
+        class="p-3 bg-light overflow-y-auto"
+        style="width: 360px; height: 100%"
+      >
+        This is an example of overflow-x-scroll
+        <code>.overflow-auto</code>
+        on an element with set width and height dimensions. By design, this
+        content will vertically scroll.
+        <div class="p">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae
+          repellat omnis sequi doloremque, nobis et provident beatae tempore!
+        </div>
+        <div class="p">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae id
+          molestiae cum amet, veritatis omnis dolores, reiciendis porro ipsum
+          libero odio pariatur illum nemo? Ab nihil libero modi suscipit
+          tempore! Sed molestiae aut iste eos officiis. Ut, tempora. Quaerat
+          optio, reiciendis aspernatur nihil praesentium culpa magnam
+          voluptatibus. Sapiente necessitatibus recusandae maxime rem, itaque
+          reprehenderit est provident animi iusto minima quisquam at a saepe
+          magnam quae. Dolores blanditiis a ex quam labore optio hic nisi
+          laboriosam tempore itaque culpa qui reiciendis, nostrum asperiores
+          porro perferendis maxime voluptatibus earum alias ipsum, inventore
+          ducimus molestiae est temporibus. Voluptas molestiae magnam quis modi,
+          cumque velit placeat nostrum iusto ipsa, nobis nemo architecto
+          deleniti beatae repellat reprehenderit neque, nihil dignissimos minus
+          explicabo. Ratione aperiam accusantium nobis at velit ut commodi
+          praesentium est sequi aliquam tenetur, maxime culpa repudiandae nisi
+          nihil officia nam hic, minus consectetur, totam cupiditate ipsum.
+          Fugit quasi molestiae molestias consequatur quos voluptatem
+          praesentium dicta perferendis ipsam nulla minima rerum aspernatur,
+          reprehenderit quis soluta distinctio assumenda voluptates. Hic ut
+          excepturi, similique autem recusandae impedit eligendi natus ratione
+          voluptatem temporibus fugit est ipsa ex sed quas tempore laborum esse
+          laboriosam quasi non at voluptate, officiis sunt. At ab laudantium qui
+          quibusdam accusantium beatae ea maxime delectus totam architecto
+          nesciunt, suscipit quam fuga nisi, minima earum, ipsum soluta? Eveniet
+          cumque qui totam rerum eius vel optio labore in! Aliquid et magni eos
+          obcaecati impedit soluta quae velit sapiente odio expedita nulla unde
+          magnam, voluptatibus numquam tempora sed officiis laudantium sit
+          voluptates tenetur? Excepturi adipisci laboriosam aperiam corporis
+          quidem dolores maxime ad perspiciatis dolorum aut. Enim ad nihil
+          nulla, at officiis tempore deserunt excepturi sit aperiam? Quisquam,
+          obcaecati nesciunt saepe laborum facere aperiam maiores corrupti
+          officia! Iusto perspiciatis culpa iure, numquam soluta magnam ipsum
+          magni repellendus, quae nisi consectetur. Eum, quibusdam accusamus
+          eveniet fugiat magni sed veritatis repellendus dolorem labore incidunt
+          beatae expedita ipsum quasi quidem ad laudantium praesentium earum
+          deleniti placeat voluptas impedit dignissimos quod! Pariatur
+          reprehenderit quis odit molestiae molestias sapiente neque quia culpa
+          aperiam. Magnam consequatur cum nisi officia alias error aspernatur
+          modi, veniam unde molestias? Eaque velit reprehenderit vero
+          consectetur similique asperiores? Corporis ipsum quam fugit nisi minus
+          debitis accusantium, fuga ipsa error, facilis nostrum doloremque
+          quidem? Delectus cupiditate possimus rem quasi doloremque, voluptate
+          dignissimos accusantium, deleniti quam corporis ad tempora vero
+          laboriosam dolores blanditiis numquam voluptatibus ullam officia
+          dolore quidem, id earum beatae veniam. Quam laudantium minus deserunt
+          ullam voluptatem molestiae fugiat iste exercitationem ad magnam, non
+          facilis deleniti! Adipisci mollitia voluptate quia quos ea maiores at
+          officiis nesciunt dolores explicabo blanditiis alias numquam excepturi
+          ipsum esse doloremque qui, nemo velit perspiciatis odio commodi ad nam
+          possimus. At animi dolorem fugiat porro molestias quibusdam error quam
+          aut, minima ex nihil quasi architecto. Id adipisci eligendi debitis
+          molestias minima sint hic repellat iste accusantium? Consectetur
+          voluptatem officia earum nulla! Est assumenda recusandae consectetur
+          dicta facilis temporibus accusamus porro! A error similique placeat
+          perspiciatis. At nisi, corrupti ea, sint magni nobis exercitationem
+          ipsum quos fugiat itaque maxime quisquam soluta eligendi quo, ullam
+          quia.
+        </div>
+      </div>
+      <div
+        class="p-3 bg-light overflow-y-auto"
+        style="width: 360px; height: 100%"
+      >
+        This is an example of overflow-x-scroll
+        <code>.overflow-auto</code>
+        on an element with set width and height dimensions. By design, this
+        content will vertically scroll.
+        <div class="p">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae
+          repellat omnis sequi doloremque, nobis et provident beatae tempore!
+        </div>
+        <div class="p">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae id
+          molestiae cum amet, veritatis omnis dolores, reiciendis porro ipsum
+          libero odio pariatur illum nemo? Ab nihil libero modi suscipit
+          tempore! Sed molestiae aut iste eos officiis. Ut, tempora. Quaerat
+          optio, reiciendis aspernatur nihil praesentium culpa magnam
+          voluptatibus. Sapiente necessitatibus recusandae maxime rem, itaque
+          reprehenderit est provident animi iusto minima quisquam at a saepe
+          magnam quae. Dolores blanditiis a ex quam labore optio hic nisi
+          laboriosam tempore itaque culpa qui reiciendis, nostrum asperiores
+          porro perferendis maxime voluptatibus earum alias ipsum, inventore
+          ducimus molestiae est temporibus. Voluptas molestiae magnam quis modi,
+          cumque velit placeat nostrum iusto ipsa, nobis nemo architecto
+          deleniti beatae repellat reprehenderit neque, nihil dignissimos minus
+          explicabo. Ratione aperiam accusantium nobis at velit ut commodi
+          praesentium est sequi aliquam tenetur, maxime culpa repudiandae nisi
+          nihil officia nam hic, minus consectetur, totam cupiditate ipsum.
+          Fugit quasi molestiae molestias consequatur quos voluptatem
+          praesentium dicta perferendis ipsam nulla minima rerum aspernatur,
+          reprehenderit quis soluta distinctio assumenda voluptates. Hic ut
+          excepturi, similique autem recusandae impedit eligendi natus ratione
+          voluptatem temporibus fugit est ipsa ex sed quas tempore laborum esse
+          laboriosam quasi non at voluptate, officiis sunt. At ab laudantium qui
+          quibusdam accusantium beatae ea maxime delectus totam architecto
+          nesciunt, suscipit quam fuga nisi, minima earum, ipsum soluta? Eveniet
+          cumque qui totam rerum eius vel optio labore in! Aliquid et magni eos
+          obcaecati impedit soluta quae velit sapiente odio expedita nulla unde
+          magnam, voluptatibus numquam tempora sed officiis laudantium sit
+          voluptates tenetur? Excepturi adipisci laboriosam aperiam corporis
+          quidem dolores maxime ad perspiciatis dolorum aut. Enim ad nihil
+          nulla, at officiis tempore deserunt excepturi sit aperiam? Quisquam,
+          obcaecati nesciunt saepe laborum facere aperiam maiores corrupti
+          officia! Iusto perspiciatis culpa iure, numquam soluta magnam ipsum
+          magni repellendus, quae nisi consectetur. Eum, quibusdam accusamus
+          eveniet fugiat magni sed veritatis repellendus dolorem labore incidunt
+          beatae expedita ipsum quasi quidem ad laudantium praesentium earum
+          deleniti placeat voluptas impedit dignissimos quod! Pariatur
+          reprehenderit quis odit molestiae molestias sapiente neque quia culpa
+          aperiam. Magnam consequatur cum nisi officia alias error aspernatur
+          modi, veniam unde molestias? Eaque velit reprehenderit vero
+          consectetur similique asperiores? Corporis ipsum quam fugit nisi minus
+          debitis accusantium, fuga ipsa error, facilis nostrum doloremque
+          quidem? Delectus cupiditate possimus rem quasi doloremque, voluptate
+          dignissimos accusantium, deleniti quam corporis ad tempora vero
+          laboriosam dolores blanditiis numquam voluptatibus ullam officia
+          dolore quidem, id earum beatae veniam. Quam laudantium minus deserunt
+          ullam voluptatem molestiae fugiat iste exercitationem ad magnam, non
+          facilis deleniti! Adipisci mollitia voluptate quia quos ea maiores at
+          officiis nesciunt dolores explicabo blanditiis alias numquam excepturi
+          ipsum esse doloremque qui, nemo velit perspiciatis odio commodi ad nam
+          possimus. At animi dolorem fugiat porro molestias quibusdam error quam
+          aut, minima ex nihil quasi architecto. Id adipisci eligendi debitis
+          molestias minima sint hic repellat iste accusantium? Consectetur
+          voluptatem officia earum nulla! Est assumenda recusandae consectetur
+          dicta facilis temporibus accusamus porro! A error similique placeat
+          perspiciatis. At nisi, corrupti ea, sint magni nobis exercitationem
+          ipsum quos fugiat itaque maxime quisquam soluta eligendi quo, ullam
+          quia.
+        </div>
+      </div>
+      <div
+        class="p-3 bg-light overflow-y-auto"
+        style="width: 360px; height: 100%"
+      >
+        This is an example of overflow-x-scroll
+        <code>.overflow-auto</code>
+        on an element with set width and height dimensions. By design, this
+        content will vertically scroll.
+        <div class="p">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae
+          repellat omnis sequi doloremque, nobis et provident beatae tempore!
+        </div>
+        <div class="p">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae id
+          molestiae cum amet, veritatis omnis dolores, reiciendis porro ipsum
+          libero odio pariatur illum nemo? Ab nihil libero modi suscipit
+          tempore! Sed molestiae aut iste eos officiis. Ut, tempora. Quaerat
+          optio, reiciendis aspernatur nihil praesentium culpa magnam
+          voluptatibus. Sapiente necessitatibus recusandae maxime rem, itaque
+          reprehenderit est provident animi iusto minima quisquam at a saepe
+          magnam quae. Dolores blanditiis a ex quam labore optio hic nisi
+          laboriosam tempore itaque culpa qui reiciendis, nostrum asperiores
+          porro perferendis maxime voluptatibus earum alias ipsum, inventore
+          ducimus molestiae est temporibus. Voluptas molestiae magnam quis modi,
+          cumque velit placeat nostrum iusto ipsa, nobis nemo architecto
+          deleniti beatae repellat reprehenderit neque, nihil dignissimos minus
+          explicabo. Ratione aperiam accusantium nobis at velit ut commodi
+          praesentium est sequi aliquam tenetur, maxime culpa repudiandae nisi
+          nihil officia nam hic, minus consectetur, totam cupiditate ipsum.
+          Fugit quasi molestiae molestias consequatur quos voluptatem
+          praesentium dicta perferendis ipsam nulla minima rerum aspernatur,
+          reprehenderit quis soluta distinctio assumenda voluptates. Hic ut
+          excepturi, similique autem recusandae impedit eligendi natus ratione
+          voluptatem temporibus fugit est ipsa ex sed quas tempore laborum esse
+          laboriosam quasi non at voluptate, officiis sunt. At ab laudantium qui
+          quibusdam accusantium beatae ea maxime delectus totam architecto
+          nesciunt, suscipit quam fuga nisi, minima earum, ipsum soluta? Eveniet
+          cumque qui totam rerum eius vel optio labore in! Aliquid et magni eos
+          obcaecati impedit soluta quae velit sapiente odio expedita nulla unde
+          magnam, voluptatibus numquam tempora sed officiis laudantium sit
+          voluptates tenetur? Excepturi adipisci laboriosam aperiam corporis
+          quidem dolores maxime ad perspiciatis dolorum aut. Enim ad nihil
+          nulla, at officiis tempore deserunt excepturi sit aperiam? Quisquam,
+          obcaecati nesciunt saepe laborum facere aperiam maiores corrupti
+          officia! Iusto perspiciatis culpa iure, numquam soluta magnam ipsum
+          magni repellendus, quae nisi consectetur. Eum, quibusdam accusamus
+          eveniet fugiat magni sed veritatis repellendus dolorem labore incidunt
+          beatae expedita ipsum quasi quidem ad laudantium praesentium earum
+          deleniti placeat voluptas impedit dignissimos quod! Pariatur
+          reprehenderit quis odit molestiae molestias sapiente neque quia culpa
+          aperiam. Magnam consequatur cum nisi officia alias error aspernatur
+          modi, veniam unde molestias? Eaque velit reprehenderit vero
+          consectetur similique asperiores? Corporis ipsum quam fugit nisi minus
+          debitis accusantium, fuga ipsa error, facilis nostrum doloremque
+          quidem? Delectus cupiditate possimus rem quasi doloremque, voluptate
+          dignissimos accusantium, deleniti quam corporis ad tempora vero
+          laboriosam dolores blanditiis numquam voluptatibus ullam officia
+          dolore quidem, id earum beatae veniam. Quam laudantium minus deserunt
+          ullam voluptatem molestiae fugiat iste exercitationem ad magnam, non
+          facilis deleniti! Adipisci mollitia voluptate quia quos ea maiores at
+          officiis nesciunt dolores explicabo blanditiis alias numquam excepturi
+          ipsum esse doloremque qui, nemo velit perspiciatis odio commodi ad nam
+          possimus. At animi dolorem fugiat porro molestias quibusdam error quam
+          aut, minima ex nihil quasi architecto. Id adipisci eligendi debitis
+          molestias minima sint hic repellat iste accusantium? Consectetur
+          voluptatem officia earum nulla! Est assumenda recusandae consectetur
+          dicta facilis temporibus accusamus porro! A error similique placeat
+          perspiciatis. At nisi, corrupti ea, sint magni nobis exercitationem
+          ipsum quos fugiat itaque maxime quisquam soluta eligendi quo, ullam
+          quia.
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
