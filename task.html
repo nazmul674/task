@@ -10,14 +10,9 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-    <!-- fontawesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.form.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
       integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
@@ -119,11 +114,11 @@
         </div>
         <div class="mb-4 bg-secondary-subtle">
           <div class="d-flex justify-content-between mb-2">
-            <div class="d-flex">
+            <div class="d-flex align-items-center justify-content-start">
               <img src="./images/d1.jpg" class="w-25 rounded-circle" />
               <h6>Client Name</h6>
             </div>
-            <div class="d-flex justify-content-end">
+            <div class="d-flex align-items-center justify-content-end">
               <img src="./images/d1.jpg" class="w-25 rounded-circle" />
               <h6>Sadik Istiak</h6>
             </div>
@@ -209,14 +204,70 @@
             </div>
             <!-- Modal testing -->
 
-            <!-- The Modal -->
+            <!-- form1 -->
             <div id="myModal" class="modal">
               <!-- Modal content -->
               <div class="modal-content">
-                <span class="close">&times;</span>
+                <!-- <form id="fupForm" enctype="multipart/form-data">
+                  <div class="form-group">
+                    <label for="file">File:</label>
+                    <input
+                      type="file"
+                      class="form-control"
+                      id="file"
+                      name="file"
+                      required
+                    />
+                  </div>
+                  <input
+                    type="submit"
+                    name="submit"
+                    class="btn btn-primary submitBtn"
+                    value="SUBMIT"
+                  />
+                  <span class="close">&times;</span>
+                </form> -->
+
+                <form enctype="multipart/form-data" action="" method="post">
+                  <span class="close"
+                    >&times;
+                    <h6>CLOSE</h6></span
+                  >
+                  <div>
+                    <input
+                      type="file"
+                      name="fileImg[]"
+                      id="fileImg"
+                      multiple
+                      onchange="preview();"
+                    />
+                  </div>
+
+                  <div>
+                    <input
+                      type="file"
+                      name="fileImg[]"
+                      id="fileImg"
+                      multiple
+                      onchange="preview();"
+                    />
+                  </div>
+                  <div>
+                    <input
+                      type="file"
+                      name="fileImg[]"
+                      id="fileImg"
+                      multiple
+                      onchange="preview();"
+                    />
+                  </div>
+
+                  <button type="button" onclick="submitData();">Submit</button>
+                </form>
+                <!-- <span class="close">&times;</span>
                 <input id="fileInput" type="file" />
                 <input id="fileInput" type="file" />
-                <input id="fileInput" type="file" />
+                <input id="fileInput" type="file" /> -->
               </div>
             </div>
 
@@ -4714,6 +4765,75 @@
         </div>
       </div>
     </div>
+    <!-- <script>
+      
+      $(document).ready(function (e) {
+        // Submit form data via Ajax
+        $("#fupForm").on("submit", function (e) {
+          e.preventDefault();
+          $.ajax({
+            type: "POST",
+            url: "http://localhost/PHP/Task/filesubmit.php",
+            data: new FormData(this),
+            dataType: "json",
+            contentType: false,
+            cache: false,
+            processData: false,
+            beforeSend: function () {
+              $(".submitBtn").attr("disabled", "disabled");
+              $("#fupForm").css("opacity", ".5");
+            },
+            success: function (response) {
+              $(".statusMsg").html("");
+              if (response.status == 1) {
+                $("#fupForm")[0].reset();
+                $(".statusMsg").html(
+                  '<p class="alert alert-success">' + response.message + "</p>"
+                );
+              } else {
+                $(".statusMsg").html(
+                  '<p class="alert alert-danger">' + response.message + "</p>"
+                );
+              }
+              $("#fupForm").css("opacity", "");
+              $(".submitBtn").removeAttr("disabled");
+            },
+          });
+        });
+      });
+    </script> -->
+    <script type="text/javascript">
+      function preview() {
+        var totalFiles = $("#fileImg").get(0).files.length;
+        for (var i = 0; i < totalFiles; i++) {
+          $("#preview").append(
+            "<img src = '" + URL.createObjectURL(event.target.files[i]) + "'>"
+          );
+        }
+      }
+
+      function submitData() {
+        $(document).ready(function () {
+          var formData = new FormData();
+
+          var totalFiles = $("#fileImg").get(0).files.length;
+          for (var i = 0; i < totalFiles; i++) {
+            formData.append("fileImg[]", $("#fileImg").get(0).files[i]);
+          }
+
+          $.ajax({
+            url: "http://localhost/PHP/Task/filesubmit.php",
+            type: "post",
+            data: formData,
+            contentType: false,
+            processData: false,
+            success: function (response) {
+              alert(response);
+            },
+          });
+        });
+      }
+    </script>
     <script src="./index.js"></script>
   </body>
 </html>
