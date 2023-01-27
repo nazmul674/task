@@ -64,8 +64,20 @@
       min-width: 300px;
       margin-right: 5px;
     } */
-    .w-25 {
+    /* .w-25 {
       width: 10% !important;
+    } */
+    .width {
+      width: 13% !important;
+    }
+    .fsize {
+      font-size: 13px;
+    }
+    .calendersize {
+      margin-left: 11rem !important;
+    }
+    .sizing {
+      margin-bottom: 0;
     }
   </style>
   <body>
@@ -74,26 +86,49 @@
       style="height: 300px; width: 1400px"
     >
       <div
-        class="p-3 bg-light overflow-y-auto"
+        class="p-3 bg-light overflow-y-auto bg-body-secondary bg-opacity-50"
         style="width: 860px; height: 100%"
       >
         <div class="div"><h5>Incomplete</h5></div>
-        <div class="div">
-          <div class="d-flex justify-content-between">
-            <h6>Client Name</h6>
-            <h6>Sadik</h6>
-          </div>
-          <div class="d-flex justify-content-between">
-            <div><p>This is the mention date</p></div>
-
+        <div class="mb-4">
+          <div class="d-flex justify-content-between mb-2">
+            <div class="d-flex">
+              <img src="./images/d1.jpg" class="w-25 rounded-circle" />
+              <h6>Client Name</h6>
+            </div>
             <div class="d-flex justify-content-end">
+              <img src="./images/d1.jpg" class="w-25 rounded-circle" />
+              <h6>Sadik Istiak</h6>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between mb-2">
+            <div class="d-flex justify-content-between align-items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="currentColor"
+                class="bi bi-stack ms-3 me-2"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="m14.12 10.163 1.715.858c.22.11.22.424 0 .534L8.267 15.34a.598.598 0 0 1-.534 0L.165 11.555a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.66zM7.733.063a.598.598 0 0 1 .534 0l7.568 3.784a.3.3 0 0 1 0 .535L8.267 8.165a.598.598 0 0 1-.534 0L.165 4.382a.299.299 0 0 1 0-.535L7.733.063z"
+                />
+                <path
+                  d="m14.12 6.576 1.715.858c.22.11.22.424 0 .534l-7.568 3.784a.598.598 0 0 1-.534 0L.165 7.968a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.659z"
+                />
+              </svg>
+              <p class="fsize">This is the mention date</p>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="w-25 h-25"
+                class="w-25 h-25 calendersize"
               >
                 <path
                   stroke-linecap="round"
@@ -105,15 +140,15 @@
             </div>
           </div>
           <div class="d-flex justify-content-between align-items-center">
-            <img src="./images/d1.jpg" class="w-25" />
-            <img src="./images/d1.jpg" class="w-25" />
-            <h6>12+</h6>
-            <div class="d-flex">
-              <h6>15</h6>
+            <img src="./images/d1.jpg" class="w-25 width" />
+            <img src="./images/d1.jpg" class="w-25 width" />
+            <h6 class="sizing rounded-circle me-2">12+</h6>
+            <div class="d-flex align-items-center justify-content-center me-2">
+              <h6 class="me-2 sizing">15</h6>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
+                width="19"
+                height="19"
                 fill="currentColor"
                 class="bi bi-wechat"
                 viewBox="0 0 16 16"
@@ -128,8 +163,7 @@
             </div>
 
             <!-- attachment -->
-            <div class="d-flex">
-              <h6>25</h6>
+            <div class="d-flex align-items-center me-2">
               <button id="myBtn" class="border none">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -144,6 +178,7 @@
                   />
                 </svg>
               </button>
+              <h6 class="sizing">25</h6>
             </div>
             <!-- Modal testing -->
 
@@ -159,7 +194,7 @@
             </div>
 
             <!-- calender -->
-            <div class="d-flex justify-content-between">
+            <div class="d-flex align-items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -175,16 +210,20 @@
                   d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
                 />
               </svg>
-              <h6>30/12/2022</h6>
+              <h6 class="sizing">30/12/2022</h6>
             </div>
           </div>
         </div>
 
         <!-- next -->
+
+        <!-- next -->
         <div class="div"></div>
+        <!-- next -->
         <div class="div"></div>
+        <!-- next -->
         <div class="div"></div>
-        <div class="div"></div>
+        <!-- next -->
         <div class="div"></div>
       </div>
       <div
