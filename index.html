@@ -69,7 +69,7 @@
       font-size: 13px;
     }
     .calendersize {
-      margin-left: 15rem !important;
+      margin-left: 10rem !important;
     }
     .sizing {
       margin-bottom: 0;
@@ -99,11 +99,11 @@
   <body>
     <div
       class="d-flex flex-row flex-nowrap overflow-x-auto border"
-      style="height: 600px; width: 3000px"
+      style="height: 600px; width: 2200px"
     >
       <div
-        class="p-3 bg-light overflow-y-auto bg-body-secondary"
-        style="width: 100%; height: 100%"
+        class="p-2 bg-light overflow-y-auto bg-body-secondary"
+        style="width: 55%; height: 100%"
       >
         <div class="d-flex justify-content-between mb-3">
           <div class="d-flex">
@@ -262,12 +262,15 @@
                     />
                   </div>
 
-                  <button type="button" onclick="submitData();">Submit</button>
+                  <button id="btnid" type="button" onclick="submitData();">
+                    Submit
+                  </button>
                 </form>
                 <!-- <span class="close">&times;</span>
                 <input id="fileInput" type="file" />
                 <input id="fileInput" type="file" />
                 <input id="fileInput" type="file" /> -->
+                <div id="upldstatus" style="color: green">Upload Status</div>
               </div>
             </div>
 
@@ -926,8 +929,8 @@
       </div>
 
       <div
-        class="p-3 bg-light overflow-y-auto bg-body-secondary"
-        style="width: 100%; height: 100%"
+        class="p-2 bg-light overflow-y-auto bg-body-secondary"
+        style="width: 55%; height: 100%"
       >
         <div class="d-flex justify-content-between mb-3">
           <div class="d-flex">
@@ -1694,8 +1697,8 @@
       </div>
       <!-- next column -->
       <div
-        class="p-3 bg-light overflow-y-auto bg-body-secondary"
-        style="width: 100%; height: 100%"
+        class="p-2 bg-light overflow-y-auto bg-body-secondary"
+        style="width: 55%; height: 100%"
       >
         <div class="d-flex justify-content-between mb-3">
           <div class="d-flex">
@@ -2462,8 +2465,8 @@
       </div>
       <!-- next column -->
       <div
-        class="p-3 bg-light overflow-y-auto bg-body-secondary"
-        style="width: 100%; height: 100%"
+        class="p-2 bg-light overflow-y-auto bg-body-secondary"
+        style="width: 55%; height: 100%"
       >
         <div class="d-flex justify-content-between mb-3">
           <div class="d-flex">
@@ -3230,8 +3233,8 @@
       </div>
       <!-- next column -->
       <div
-        class="p-3 bg-light overflow-y-auto bg-body-secondary"
-        style="width: 100%; height: 100%"
+        class="p-2 bg-light overflow-y-auto bg-body-secondary"
+        style="width: 55%; height: 100%"
       >
         <div class="d-flex justify-content-between mb-3">
           <div class="d-flex">
@@ -3998,8 +4001,8 @@
       </div>
       <!-- next column -->
       <div
-        class="p-3 bg-light overflow-y-auto bg-body-secondary"
-        style="width: 100%; height: 100%"
+        class="p-2 bg-light overflow-y-auto bg-body-secondary"
+        style="width: 55%; height: 100%"
       >
         <div class="d-flex justify-content-between mb-3">
           <div class="d-flex">
@@ -4829,6 +4832,7 @@
             processData: false,
             success: function (response) {
               alert(response);
+              // window.alert("Win");
             },
           });
         });
