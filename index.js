@@ -33,6 +33,7 @@ window.onclick = function (event) {
   }
 };
 
+/*Attachment count by js */
 document.getElementById("fileImg").addEventListener("change", function () {
   console.log(this.files.length);
   attchmntFileCount.textContent = this.files.length;
@@ -86,7 +87,6 @@ function submitData() {
       processData: false,
       success: function (response) {
         alert(response);
-        // window.alert("Win");
       },
     });
   });
