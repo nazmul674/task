@@ -58,12 +58,9 @@ function preview() {
 function submitData() {
   $(document).ready(function () {
     var formData = new FormData();
-    var filesLength1 = document.getElementById("fileImg1").files.length;
+    var filesLength1 = document.getElementById("fileImg").files.length;
     for (var i = 0; i < filesLength1; i++) {
-      formData.append(
-        "fileImg[]",
-        document.getElementById("fileImg1").files[i]
-      );
+      formData.append("fileImg[]", document.getElementById("fileImg").files[i]);
     }
     // var filesLength2 = document.getElementById("fileImg2").files.length;
     // for (var i = 0; i < filesLength2; i++) {

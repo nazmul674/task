@@ -5,7 +5,7 @@ $conn = mysqli_connect("localhost", "root", "", "upload");
 if(isset($_FILES["fileImg"]["name"])){
   $totalFiles = count($_FILES['fileImg']['name']);
   $filesArray = array();
-
+echo "totalFiles";
   for($i = 0; $i < $totalFiles; $i++){
     $imageName = $_FILES["fileImg"]["name"][$i];
     $tmpName = $_FILES["fileImg"]["tmp_name"][$i];
