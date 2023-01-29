@@ -7,7 +7,7 @@ var modal = document.getElementById("myModal");
 var button = document.getElementById("myBtn");
 var upldstatus = document.getElementById("upldstatus");
 var span = document.getElementsByClassName("close")[0];
-
+var attchmntFileCount = document.getElementById("attchmntFileCount");
 button.onclick = function () {
   modal.style.display = "block";
 };
@@ -33,8 +33,17 @@ window.onclick = function (event) {
   }
 };
 
+document.getElementById("fileImg").addEventListener("change", function () {
+  console.log(this.files.length);
+  attchmntFileCount.textContent = this.files.length;
+});
+// document.getElementById("fileImg2").addEventListener("change", function () {
+//   console.log(this.files.length);
+//   attchmntFileCount.textContent = this.files.length;
+// });
+
 function preview() {
-  var totalFiles1 = $("#fileImg1").get(0).files.length;
+  var totalFiles1 = $("#fileImg").get(0).files.length;
 
   for (var i = 0; i < totalFiles1; i++) {
     $("#preview").append(
@@ -55,20 +64,20 @@ function submitData() {
         document.getElementById("fileImg1").files[i]
       );
     }
-    var filesLength2 = document.getElementById("fileImg2").files.length;
-    for (var i = 0; i < filesLength2; i++) {
-      formData.append(
-        "fileImg[]",
-        document.getElementById("fileImg2").files[i]
-      );
-    }
-    var filesLength3 = document.getElementById("fileImg3").files.length;
-    for (var i = 0; i < filesLength3; i++) {
-      formData.append(
-        "fileImg[]",
-        document.getElementById("fileImg3").files[i]
-      );
-    }
+    // var filesLength2 = document.getElementById("fileImg2").files.length;
+    // for (var i = 0; i < filesLength2; i++) {
+    //   formData.append(
+    //     "fileImg[]",
+    //     document.getElementById("fileImg2").files[i]
+    //   );
+    // }
+    // var filesLength3 = document.getElementById("fileImg3").files.length;
+    // for (var i = 0; i < filesLength3; i++) {
+    //   formData.append(
+    //     "fileImg[]",
+    //     document.getElementById("fileImg3").files[i]
+    //   );
+    // }
     $.ajax({
       url: "http://localhost/PHP/Task/filesubmit.php",
       type: "post",
